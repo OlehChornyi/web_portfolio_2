@@ -45,3 +45,28 @@ ScrollReveal().reveal(".header__btns", {
     ...scrollRevealOption,
     delay: 2000,
 });
+
+ScrollReveal().reveal(".skill__content .section__subheader", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".skill__content .section__header", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".skill__content .section__description", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".skill__btn", {
+    ...scrollRevealOption,
+    delay: 1500
+});
+
+ScrollReveal().reveal(".skill__card", {
+    duration: 1000,
+    interval: 500,
+    delay: 2000,
+});

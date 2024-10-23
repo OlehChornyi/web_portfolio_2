@@ -270,6 +270,49 @@ nav{
     color: var(--text-dark);
 }
 
+.skill__container{
+    display: grid;
+    gap: 2rem;
+}
+
+.skill__content .section__header{
+    margin-bottom: 1rem;
+}
+
+.skill__content .section__description{
+    margin-bottom: 2rem;
+}
+
+.skill__grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.skill__card{
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.skill__card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.skill__card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.skill__card p{
+    color: var(--text-light);
+    line-height: 1.5rem;
+}
+
 @media (width >540px){
     .stats__container{
         flex-direction: row;
@@ -287,6 +330,23 @@ nav{
         height: 75px;
         width: 2px;
         background-color: var(--primary-color);
+    }
+
+    .skill__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .skill__card:nth-child(1){
+        grid-area: 1/1/3/2;
+    }
+
+    .skill__card:nth-child(2){
+        grid-area: 2/2/4/3;
+    }
+
+    .skill__card:nth-child(3){
+        grid-area: 3/1/5/2;
     }
 }
 
@@ -384,5 +444,10 @@ nav{
 
     .header__image{
         grid-area: 1/2/2/3;
+    }
+
+    .skill__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
 }
