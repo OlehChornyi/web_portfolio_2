@@ -70,3 +70,13 @@ ScrollReveal().reveal(".skill__card", {
     interval: 500,
     delay: 2000,
 });
+
+const portfolio = document.querySelector(".portfolio__image");
+
+const portfolioContent = Array.from(portfolio.children);
+
+portfolioContent.forEach(item => {
+    const duplicateNode = item.cloneNode(true);
+    duplicateNode.setAttribute("aria-hidden", true);
+    portfolio.appendChild(duplicateNode);
+});
