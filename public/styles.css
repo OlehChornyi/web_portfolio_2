@@ -457,6 +457,40 @@ nav {
     margin-inline: auto;
 }
 
+.footer__container{
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    border-top: 1px solid var(--extra-light);
+}
+
+.footer__container p{
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.footer__socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer__socials a{
+    padding: 6px 8px;
+    font-size: 1.125rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+
+.footer__socials a:hover{
+    background-color: var(--primary-color-dark);
+}
+
 @keyframes scroll {
     to {
         transform: translateX(calc(-50% - 0.5rem));
@@ -625,5 +659,10 @@ nav {
 
     .portfolio__image__wrapper {
         grid-column: 3/6;
+    }
+
+    .footer__container{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
